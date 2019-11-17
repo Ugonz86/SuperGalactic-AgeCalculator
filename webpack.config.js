@@ -8,6 +8,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
+    // publicPath: "/SuperGalactic-AgeCalculator/"
   },
   devtool: 'eval-source-map',  // new line
   devServer: {                 // new line
@@ -33,7 +34,10 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude:  [
+            /node_modules/,
+            /spec/
+          ],
         loader: "eslint-loader"
       },
       {
