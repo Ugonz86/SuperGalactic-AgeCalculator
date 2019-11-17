@@ -1,6 +1,6 @@
 # **Super Galactic Age Calculator**
 
-#### A Test Driven Development JavaScript program that take the user's age input ans returns their age in different planet years and more.
+#### A Test Driven Development JavaScript program that take the user's age input and returns their age in different planet years and more.
 #### 11/15/19
 
 ##### By _**Uriel Gonzalez**_
@@ -42,9 +42,10 @@ _No bugs at the moment._
 ## **Github Link**
 * _https://ugonz86.github.io/SuperGalactic-AgeCalculator/_
 
+
 ## Support and contact details
 
-* _ugonzalez@gmail.com_
+* _ugonzalez86@gmail.com_
 
 ## **Technologies Used**
 
