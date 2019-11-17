@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background:url(https://images.wallpaperscraft.com/image/milky_way_starry_sky_galaxy_119519_3840x2160.jpg) no-repeat center center fixed;
+    background:url(https://cdn.eso.org/images/wallpaper5/eso0932a.jpg) no-repeat center center fixed;
     background-size: cover;
     background-color: black;
     min-height: 100%;
@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: 'Orbitron', sans-serif;
+  text-shadow: black 1px 2px 3px;
   background-color: transparent;
 }
 
@@ -17,23 +18,25 @@ body {
   background-color: none;
 }
 
-.grid-container {
-  display: inline-grid;
-  grid-template-columns: 250px 250px;
-  grid-template-rows: 250px 250px;
-
+.row {
+  /* display: inline-grid; */
+  /* grid-template-columns: 250px 250px; */
+  margin-top: 100px;
+  height: 250px;
+  width: inherit;
 }
 
-.grid-item {
+.col-md-3 {
   border-radius: 20px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  /* margin-right: 3px;
+  margin-bottom: 5px; */
   /* background-color: rgba(0, 0, 0, 0.50); */
   /* background-color: black; */
 }
 
 .jumbotron {
   background-color: rgba(0, 0, 0, 0.50);
+  border-radius: 20px;
 }
 
 img {
@@ -50,7 +53,7 @@ img {
 h1 {
   color: white;
   letter-spacing: 8px;
-  font-size: 250%;
+  font-size: 300%;
   text-shadow: black 1px 2px 3px;
 }
 
@@ -64,12 +67,15 @@ input {
   border-radius: 25px;
   height: 43px;
 }
-
-#ageInputForm {
-  /* display: none; */
+#intro {
+  color: white;
+  margin-top: 180px;
+}
+#ageInputForm, #expectancyForm {
+  display: none;
   color: white;
   font-size: 150%;
-  margin-top: 100px;
+  margin-top: 180px;
   /* background-color: rgba(0, 0, 0, 0.8); */
   /* background-size: contain; */
 
@@ -79,11 +85,13 @@ input {
   text-align: center;
 }
 
-#resultDiv {
+#resultDiv, #yearsLeft {
   display: none;
+  margin-top: 180px;
   /* background-color: rgba(0, 0, 0, 0.50); */
   /* background-color: black; */
   border-radius: 20px;
+  text-align: center;
 }
 
 .middle {
@@ -100,8 +108,8 @@ input {
 
 .text {
   color: white;
-  font-size: 14px;
-  padding: 16px 32px;
+  font-size: 16px;
+  padding: 16px 40px;
   background-color: black;
   border-radius: 20px;
 }
@@ -112,8 +120,29 @@ input {
 
 #mercury, #venus, #mars, #jupiter {
   position: relative;
+  transition: 0.5s;
 }
 
 #mercury:hover img, #venus:hover img, #mars:hover img, #jupiter:hover img {
   opacity: 0.3;
+}
+
+#seeAgeInPlanets, #seeYearsLeft, #seeNextBirthday {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.50);
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+#ageInputButton, #goHome {
+  background-color: rgba(0, 0, 0, 0.50);
+  color: white;
+  border: none;
+  padding: 5px;
+  transition: 0.3s;
+}
+#seeAgeInPlanets:hover, #seeYearsLeft:hover, #seeNextBirthday:hover, #ageInputButton:hover, #goHome:hover {
+  box-shadow: white 1px 1px 3px;
+  border: solid 1px #8d7ea8;
+  background-color: #000000;
 }
