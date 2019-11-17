@@ -3,35 +3,48 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
 import $ from 'jquery';
 
-// import { GalacticCalculator } from './backend-code';
-//
+import { GalacticCalculator } from './backend-code';
+import { ExpectancyCalculator } from './backend-code';
+
 $(document).ready(function() {
 
+$("#seeAgeInPlanets").click(function() {
+  $("#ageInputForm").slideDown("slow");
+  $("#intro").hide("slow");
+});
+$("#seeYearsLeft").click(function() {
+  $("#expectancyForm").slideDown("slow");
+  $("#intro").hide("slow");
+});
+$("#goHome").click(function() {
+  location.reload();
+});
 $("#ageInputForm").submit(function(event) {
   event.preventDefault();
 
-  // var inputtedAge = parseInt($('#ageinput').val());
-  // var calculatorResult = GalacticCalculator (inputtedAge);
-
-  $("#ageInputForm").hide();
+  var inputtedAge = $('#ageInput').val();
+  //
+  var calculatorResult =  new GalacticCalculator(inputtedAge);
+  event.preventDefault();
+  $("#ageInputForm").hide("slow");
   $("#resultDiv").slideDown("slow");
-  });
-});
-// $(document).ready(function() {
-//   $("#ageInputForm").submit(function(event) {
-//     event.preventDeposit();
-//
-//     $("#resultDiv").slideUp();
-//     $("#ageInputForm").hide();
-//   });
-// });
-// if (this.averageLifeExpectancy >= this.lifeExpectancyInMercury())
-//   return ("You have have lived" + (averageLifeExpectancy - lifeExpectancyInMercury) + "years past your life expectancy!");
+  $("#ageInMercury").text(calculatorResult.ageInMercuryYears());
+  $("#ageInVenus").text(calculatorResult.ageInVenusYears());
+  $("#ageInMars").text(calculatorResult.ageInMarsYears());
+  $("#ageInJupiter").text(calculatorResult.ageInJupiterYears());
 
-// test('should correctly return the number of years the user have lived past the life expectancy on Mercury', () => {
-//   var calculator = new AgeCalculator(33,100);
-//   console.log(calculator);
-//   debugger;
-//   expect(calculator.lifeExpectancyInMercury() - calculator.averageLifeExpectancy).toEqual(179);
-//
-// });
+  });
+  $("#expectancyForm").submit(function(event) {
+    event.preventDefault();
+    var inputtedLifeExpectancy = $('#expectancyInput').val();
+    var calculatorResult =  new ExpectancyCalculator(inputtedLifeExpectancy);
+    event.preventDefault();
+    $("#expectancyForm").hide("slow");
+    $("#yearsLeft").slideDown("slow");
+    $("#yearsLeftInMercury").text(calculatorResult.lifeExpectancyInMercury());
+    $("#yearsLeftInVenus").text(calculatorResult.lifeExpectancyInVenus());
+    $("#yearsLeftInMars").text(calculatorResult.lifeExpectancyInMars());
+    $("#yearsLeftInJupiter").text(calculatorResult.lifeExpectancyInJupiter());
+
+    });
+});
