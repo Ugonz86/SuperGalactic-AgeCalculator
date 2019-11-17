@@ -100,12 +100,11 @@ input {
 
 .text {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   padding: 16px 32px;
   background-color: black;
   border-radius: 20px;
 }
-
 
 #mercury:hover .middle, #venus:hover .middle, #mars:hover .middle, #jupiter:hover .middle {
   opacity: 1;
