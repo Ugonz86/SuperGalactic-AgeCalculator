@@ -44,7 +44,7 @@ _No bugs at the moment._
 
 ## Support and contact details
 
-* _ugonzalez@gmail.com_
+* _ugonzalez86@gmail.com_
 
 ## **Technologies Used**
 
