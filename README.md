@@ -21,11 +21,10 @@
 | **Calculate age in Venus years** - The program should correctly return inputted age in Venus years.  | 33 | 53 |
 | **Calculate age in Mars years** - The program should correctly return inputted age in Mars years.  | 33 | 17 |
 | **Calculate age in Jupiter years** - The program should correctly return inputted age in Jupiter years.  | 33 | 2 |
-| **Calculate years of life expectancy on each planet**  | Age: 33, Average Life Expectancy: 100 | Mercury: 279  |
-| Age: 33, Average Life Expectancy: 100 | Venus: 108  |
-| Age: 33, Average Life Expectancy: 100 | Mars: 36  |
-| Age: 33, Average Life Expectancy: 100 | Jupiter: 6  |
-
+| **Calculate years of life expectancy on Mercury**  | Age: 33, Average Life Expectancy: 100 | 279 |
+| **Calculate years of life expectancy on Venus**  | Age: 33, Average Life Expectancy: 100 | 108  |
+| **Calculate years of life expectancy on Mars**  | Age: 33, Average Life Expectancy: 100 | Mercury: 36  |
+| **Calculate years of life expectancy on Mercury**  | Age: 33, Average Life Expectancy: 100 | Mercury: 6 |
 
 
 ## **Setup/Installation Requirements**

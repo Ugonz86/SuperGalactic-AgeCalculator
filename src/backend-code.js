@@ -1,46 +1,46 @@
-export function AgeCalculator(age, averageLifeExpectancy) {
+export function GalacticCalculator(age, averageLifeExpectancy) {
   console.log(age);
   this.age = age;
   this.averageLifeExpectancy = averageLifeExpectancy;
   debugger;
 }
 
-AgeCalculator.prototype.ageInMercuryYears = function() {
+GalacticCalculator.prototype.ageInMercuryYears = function() {
   let ageInMercuryYears = Math.floor(this.age / 0.24);
     return ageInMercuryYears;
 };
 
-AgeCalculator.prototype.ageInVenusYears = function() {
+GalacticCalculator.prototype.ageInVenusYears = function() {
   let ageInVenusYears = Math.floor(this.age / 0.62);
     return ageInVenusYears;
 };
 
-AgeCalculator.prototype.ageInMarsYears = function() {
+GalacticCalculator.prototype.ageInMarsYears = function() {
   let ageInMarsYears = Math.floor(this.age / 1.88);
     return ageInMarsYears;
 };
 
-AgeCalculator.prototype.ageInJupiterYears = function() {
+GalacticCalculator.prototype.ageInJupiterYears = function() {
   let ageInJupiterYears = Math.floor(this.age / 11.86);
     return ageInJupiterYears;
 };
 
-AgeCalculator.prototype.lifeExpectancyInMercury = function() {
+GalacticCalculator.prototype.lifeExpectancyInMercury = function() {
   let lifeExpectancyInMercury = Math.floor(this.averageLifeExpectancy / 0.24);
     return lifeExpectancyInMercury;
 };
 
-AgeCalculator.prototype.lifeExpectancyInVenus = function() {
+GalacticCalculator.prototype.lifeExpectancyInVenus = function() {
   let lifeExpectancyInVenus = Math.floor(this.averageLifeExpectancy / 0.62);
     return lifeExpectancyInVenus;
 };
 
-AgeCalculator.prototype.lifeExpectancyInMars = function() {
+GalacticCalculator.prototype.lifeExpectancyInMars = function() {
   let lifeExpectancyInMars = Math.floor(this.averageLifeExpectancy / 1.88);
     return lifeExpectancyInMars;
 };
 
-AgeCalculator.prototype.lifeExpectancyInJupiter = function() {
+GalacticCalculator.prototype.lifeExpectancyInJupiter = function() {
   let lifeExpectancyInJupiter = Math.floor(this.averageLifeExpectancy / 11.86);
     return lifeExpectancyInJupiter;
 };

@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script type="text/javascript" src="bundle.js"></script>
-    <title>Super Galactic Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700&display=swap" rel="stylesheet">
+    <title>Super GalacticAge Calculator</title>
   </head>
   <body>
-
     <div class="container">
       <h1>Super Galactic Age Calculator</h1>
 
-      <form id="ageInputForm">
-        <label for="ageInput">Enter Age</label>
-        <input type="text" id="ageInput">
-      </form>
+      <!-- <div id="intro">
 
-      <div id="results">
+      </div> -->
+      <div class="jumbotron" id="ageInputForm">
+        <form>
+        <label for="ageInput">Enter Your Age</label>
+        <input type="number" id="ageInput">
+        <button type="submit" class="btn btn-dark">GO</button>
+        </form>
+      </div>
 
+
+
+      <div id="resultDiv">
+        <div class="grid-container">
+
+          <div class="grid-item" id="mercury"> <img src="https://images.wallpaperscraft.com/image/mercury_planet_space_133139_3840x2160.jpg">
+            <div class="middle">
+              <!-- <div class="text">Your Age In Earth: <span class="userInputtedAge"></span> </div> -->
+              <div class="text">Your Age In Mercury Is: <span id="ageInMercury"></span> </div>
+            </div>
+          </div>
+
+
+          <div class="grid-item" id="venus"> <img src="https://solarsystem.nasa.gov/system/resources/detail_files/688_Venus.jpg">
+            <div class="middle">
+              <!-- <div class="text">Your Age In Earth: <span class="userInputtedAge"></span> </div> -->
+              <div class="text">Your Age In Venus Is: <span id="ageInVenus"></span> </div>
+            </div>
+          </div>
+
+          <div class="grid-item" id="mars"> <img src="https://images2.alphacoders.com/540/540070.jpg">
+            <div class="middle">
+              <!-- <div class="text">Your Age In Earth: <span class="userInputtedAge"></span> </div> -->
+              <div class="text">Your Age In Mars Is: <span id="ageInMars"></span> </div>
+            </div>
+          </div>
+
+          <div class="grid-item" id="jupiter"> <img src="https://images6.alphacoders.com/878/878584.jpg">
+            <div class="middle">
+              <!-- <div class="text">Your Age In Earth: <span class="userInputtedAge"></span> </div> -->
+              <div class="text">Your Age In Jupiter Is: <span id="ageInJupiter"></span> </div>
+            </div>
+
+
+          </div>
+
+        </div>
       </div>
 
     </div>
