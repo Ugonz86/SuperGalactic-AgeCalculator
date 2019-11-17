@@ -16,7 +16,7 @@ $("#seeYearsLeft").click(function() {
   $("#expectancyForm").slideDown("slow");
   $("#intro").hide("slow");
 });
-$("#goHome").click(function() {
+$(".goHome").click(function() {
   location.reload();
 });
 $("#ageInputForm").submit(function(event) {
