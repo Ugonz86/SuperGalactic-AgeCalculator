@@ -1,7 +1,8 @@
+import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
-import $ from 'jquery';
+
 
 import { GalacticCalculator } from './backend-code';
 import { ExpectancyCalculator } from './backend-code';
