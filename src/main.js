@@ -41,10 +41,37 @@ $("#ageInputForm").submit(function(event) {
     event.preventDefault();
     $("#expectancyForm").hide("slow");
     $("#yearsLeft").slideDown("slow");
-    $("#yearsLeftInMercury").text(calculatorResult.lifeExpectancyInMercury());
-    $("#yearsLeftInVenus").text(calculatorResult.lifeExpectancyInVenus());
-    $("#yearsLeftInMars").text(calculatorResult.lifeExpectancyInMars());
-    $("#yearsLeftInJupiter").text(calculatorResult.lifeExpectancyInJupiter());
+    var expectancyInMercury = calculatorResult.lifeExpectancyInMercury();
+    if (expectancyInMercury >= 0) {
+      $("#yearsLeftInMercury").text("Years left in Mercury: " + expectancyInMercury);
+    }
+    else {
+      $("#yearsLeftInMercury").text("Years past life expectancy in Venus: " + Math.abs(expectancyInMercury));
+    }
+
+    var expectancyInVenus = calculatorResult.lifeExpectancyInVenus();
+    if (expectancyInVenus >= 0) {
+      $("#yearsLeftInVenus").text("Years left in Venus: " + expectancyInVenus);
+    }
+    else {
+      $("#yearsLeftInVenus").text("Years past life expectancy in Venus: " + Math.abs(expectancyInVenus));
+    }
+
+    var expectancyInMars = calculatorResult.lifeExpectancyInMars();
+    if (expectancyInMars >= 0) {
+      $("#yearsLeftInMars").text("Years left in Mars: " + expectancyInMars);
+    }
+    else {
+      $("#yearsLeftInMars").text("Years past life expectancy in Mars: " + Math.abs(expectancyInMars));
+    }
+
+    var expectancyInJupiter = calculatorResult.lifeExpectancyInJupiter();
+    if (expectancyInJupiter >= 0) {
+      $("#yearsLeftInJupiter").text("Years left in Jupiter: " + expectancyInJupiter);
+    }
+    else {
+      $("#yearsLeftInJupiter").text("Years past life expectancy in Jupiter: " + Math.abs(expectancyInJupiter));
+    }
 
     });
 });
