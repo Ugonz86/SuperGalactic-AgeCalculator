@@ -4,6 +4,11 @@ import './styles.css';
 import $ from 'jquery';
 import { GalacticCalculator } from './backend-code';
 import { ExpectancyCalculator } from './backend-code';
+import "./img/mercury.jpg";
+import "./img/venus.jpg";
+import "./img/mars.jpg";
+import "./img/jupiter.jpg";
+
 
 $(document).ready(function() {
 

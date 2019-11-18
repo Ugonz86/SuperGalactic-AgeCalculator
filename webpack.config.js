@@ -40,6 +40,12 @@ module.exports = {
           ],
         loader: "eslint-loader"
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
+      },
     ]
   }
 };
