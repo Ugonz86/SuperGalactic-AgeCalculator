@@ -1,9 +1,7 @@
-import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
-
-
+import $ from 'jquery';
 import { GalacticCalculator } from './backend-code';
 import { ExpectancyCalculator } from './backend-code';
 
@@ -38,7 +36,8 @@ $("#ageInputForm").submit(function(event) {
   $("#expectancyForm").submit(function(event) {
     event.preventDefault();
     var inputtedLifeExpectancy = $('#expectancyInput').val();
-    var calculatorResult =  new ExpectancyCalculator(inputtedLifeExpectancy);
+    var yourAge = $('#yourAgeInput').val();
+    var calculatorResult =  new ExpectancyCalculator(inputtedLifeExpectancy, yourAge);
     event.preventDefault();
     $("#expectancyForm").hide("slow");
     $("#yearsLeft").slideDown("slow");
