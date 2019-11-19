@@ -23,8 +23,8 @@
 | **Calculate age in Jupiter years** - The program should correctly return inputted age in Jupiter years.  | 33 | 2 |
 | **Calculate years of life expectancy on Mercury**  | Age: 33, Average Life Expectancy: 100 | 279 |
 | **Calculate years of life expectancy on Venus**  | Age: 33, Average Life Expectancy: 100 | 108  |
-| **Calculate years of life expectancy on Mars**  | Age: 33, Average Life Expectancy: 100 | Mercury: 36  |
-| **Calculate years of life expectancy on Mercury**  | Age: 33, Average Life Expectancy: 100 | Mercury: 6 |
+| **Calculate years of life expectancy on Mars**  | Age: 33, Average Life Expectancy: 100 | Mercury: 35  |
+| **Calculate years of life expectancy on Mercury**  | Age: 33, Average Life Expectancy: 100 | Mercury: 5 |
 
 
 ## **Setup/Installation Requirements**
@@ -44,7 +44,6 @@ _No bugs at the moment._
 
 ## **Github Link**
 * _https://ugonz86.github.io/SuperGalactic-AgeCalculator/_
-
 
 ## Support and contact details
 
