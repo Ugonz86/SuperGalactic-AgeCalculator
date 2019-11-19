@@ -4,44 +4,39 @@ import './styles.css';
 import $ from 'jquery';
 import { GalacticCalculator } from './backend-code';
 import { ExpectancyCalculator } from './backend-code';
-import { BirthdayCalculator } from './backend-code';
+// import { BirthdayCalculator } from './backend-code';
 import "./img/mercury.jpg";
 import "./img/venus.jpg";
 import "./img/mars.jpg";
 import "./img/jupiter.jpg";
 
-
-$(document).ready(function() {
-
-$("#seeAgeInPlanets").click(function() {
-  $("#ageInputForm").slideDown("slow");
-  $("#intro").hide("slow");
-});
-$("#seeYearsLeft").click(function() {
-  $("#expectancyForm").slideDown("slow");
-  $("#intro").hide("slow");
-});
-$("#seeNextBirthday").click(function() {
-  $("#birthdayForm").slideDown("slow");
-  $("#intro").hide("slow");
-});
-$(".goHome").click(function() {
-  location.reload();
-});
-$("#ageInputForm").submit(function(event) {
-  event.preventDefault();
-
-  var inputtedAge = $('#ageInput').val();
-  //
-  var calculatorResult =  new GalacticCalculator(inputtedAge);
-  event.preventDefault();
-  $("#ageInputForm").hide("slow");
-  $("#resultDiv").slideDown("slow");
-  $("#ageInMercury").text(calculatorResult.ageInMercuryYears());
-  $("#ageInVenus").text(calculatorResult.ageInVenusYears());
-  $("#ageInMars").text(calculatorResult.ageInMarsYears());
-  $("#ageInJupiter").text(calculatorResult.ageInJupiterYears());
-
+$(document).ready(function(){
+  $("#seeAgeInPlanets").click(function() {
+    $("#ageInputForm").slideDown("slow");
+    $("#intro").hide("slow");
+  });
+  $("#seeYearsLeft").click(function() {
+    $("#expectancyForm").slideDown("slow");
+    $("#intro").hide("slow");
+  });
+  // $("#seeNextBirthday").click(function() {
+  //   $("#birthdayForm").slideDown("slow");
+  //   $("#intro").hide("slow");
+  // });
+  $(".goHome").click(function() {
+    location.reload();
+  });
+  $("#ageInputForm").submit(function(event) {
+    event.preventDefault();
+    var inputtedAge = $('#ageInput').val();
+    var calculatorResult =  new GalacticCalculator(inputtedAge);
+    event.preventDefault();
+    $("#ageInputForm").hide("slow");
+    $("#resultDiv").slideDown("slow");
+    $("#ageInMercury").text(calculatorResult.ageInMercuryYears());
+    $("#ageInVenus").text(calculatorResult.ageInVenusYears());
+    $("#ageInMars").text(calculatorResult.ageInMarsYears());
+    $("#ageInJupiter").text(calculatorResult.ageInJupiterYears());
   });
   $("#expectancyForm").submit(function(event) {
     event.preventDefault();
@@ -58,7 +53,6 @@ $("#ageInputForm").submit(function(event) {
     else {
       $("#yearsLeftInMercury").text("Years past life expectancy in Venus: " + Math.abs(expectancyInMercury));
     }
-
     var expectancyInVenus = calculatorResult.lifeExpectancyInVenus();
     if (expectancyInVenus >= 0) {
       $("#yearsLeftInVenus").text("Years left in Venus: " + expectancyInVenus);
@@ -66,7 +60,6 @@ $("#ageInputForm").submit(function(event) {
     else {
       $("#yearsLeftInVenus").text("Years past life expectancy in Venus: " + Math.abs(expectancyInVenus));
     }
-
     var expectancyInMars = calculatorResult.lifeExpectancyInMars();
     if (expectancyInMars >= 0) {
       $("#yearsLeftInMars").text("Years left in Mars: " + expectancyInMars);
@@ -82,10 +75,9 @@ $("#ageInputForm").submit(function(event) {
     else {
       $("#yearsLeftInJupiter").text("Years past life expectancy in Jupiter: " + Math.abs(expectancyInJupiter));
     }
-
-    });
-    // $("#birthdayForm").submit(function(event) {
-    //   event.preventDefault();
-    //   var inputtedBirthday = $('#birthdayInput').val();
-    // });
+  });
+  // $("#birthdayForm").submit(function(event) {
+  //   event.preventDefault();
+  //   var inputtedBirthday = $('#birthdayInput').val();
+  // });
 });
