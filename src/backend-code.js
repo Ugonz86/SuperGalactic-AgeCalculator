@@ -55,3 +55,14 @@ ExpectancyCalculator.prototype.lifeExpectancyInJupiter = function() {
   let lifeExpectancyInJupiter = Math.floor(this.averageLifeExpectancy / jupiterConstant - this.yourAge / jupiterConstant);
     return lifeExpectancyInJupiter;
 };
+
+// export function BirthdayCalculator() {
+//   console.log();
+//
+//   debugger;
+// }
+
+// BirthdayCalculator.prototype. = function() {
+//   let  = ;
+//     return ;
+// };

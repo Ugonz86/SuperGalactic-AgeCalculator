@@ -13,7 +13,7 @@
         <br>
         <button type="submit"  id="seeAgeInPlanets">See your age in other planets</button><br><br>
         <button type="submit"  id="seeYearsLeft">See your years left in other planets</button>
-        <!-- <button type="submit"  id="seeNextBirthday">See your next birthday in other planets</button> -->
+        <button type="submit"  id="seeNextBirthday">See your next birthday in other planets</button>
       </div>
 
       <div class="jumbotron" id="ageInputForm">
@@ -101,6 +101,49 @@
         <br>
         <button type="button" class="goHome">Home</button>
       </div>
+
+      <div class="jumbotron" id="birthdayForm">
+        <form>
+          <h3>Enter Your Birthdate</h3>
+          <br>
+          <input type="date" id="birthdayInput">
+          <input type="submit" id="birthdayButton">
+        </form>
+      </div>
+
+      <div id="birthdayInPlanets">
+          <div class="row">
+            <div class="col-md-3" id="mercury"> <img src="https://images.wallpaperscraft.com/image/mercury_planet_space_133139_3840x2160.jpg">
+              <div class="middle">
+                <!-- <div class="text">Your Age In Earth: <span class="userInputtedAge"></span> </div> -->
+                <div class="text"><span id="birthdayInMercury"></span></div>
+              </div>
+            </div>
+            <div class="col-md-3" id="venus"> <img src="https://solarsystem.nasa.gov/system/resources/detail_files/688_Venus.jpg">
+              <div class="middle">
+                <!-- <div class="text">Your Age In Earth: <span class="userInputtedAge"></span> </div> -->
+                <div class="text"><span id="birthdayInVenus"></span> </div>
+              </div>
+            </div>
+            <div class="col-md-3" id="mars"> <img src="https://images2.alphacoders.com/540/540070.jpg">
+              <div class="middle">
+                <!-- <div class="text">Your Age In Earth: <span class="userInputtedAge"></span> </div> -->
+                <div class="text"><span id="birthdayInMars"></span> </div>
+              </div>
+            </div>
+            <div class="col-md-3" id="jupiter"> <img src="https://images6.alphacoders.com/878/878584.jpg">
+              <div class="middle">
+                <!-- <div class="text">Your Age In Earth: <span class="userInputtedAge"></span> </div> -->
+                <div class="text"><span id="birthdayInJupiter"></span> </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <button type="button" class="goHome">Home</button>
+      </div>
+
     </div>
   </body>
 </html>

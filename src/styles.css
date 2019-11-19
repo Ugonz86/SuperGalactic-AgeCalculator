@@ -72,7 +72,7 @@ input {
   color: white;
   margin-top: 75px;
 }
-#ageInputForm, #expectancyForm {
+#ageInputForm, #expectancyForm, #birthdayForm {
   display: none;
   color: white;
   font-size: 150%;
@@ -86,7 +86,7 @@ input {
   text-align: center;
 }
 
-#resultDiv, #yearsLeft {
+#resultDiv, #yearsLeft, #birthdayInPlanets {
   display: none;
   margin-top: 100px;
   /* background-color: rgba(0, 0, 0, 0.50); */
@@ -135,15 +135,19 @@ input {
   border: none;
   transition: 0.3s;
 }
-#ageInputButton, #expectancyButton, .goHome {
+#ageInputButton, #expectancyButton, .goHome, #birthdayButton {
   background-color: rgba(0, 0, 0, 0.50);
   color: white;
   border: none;
   padding: 5px;
   transition: 0.3s;
 }
-#seeAgeInPlanets:hover, #seeYearsLeft:hover, #seeNextBirthday:hover, #ageInputButton:hover, #expectancyButton:hover, .goHome:hover {
+#seeAgeInPlanets:hover, #seeYearsLeft:hover, #seeNextBirthday:hover, #ageInputButton:hover, #expectancyButton:hover, .goHome:hover, #birthdayButton:hover {
   box-shadow: white 1px 1px 3px;
   border: solid 1px #8d7ea8;
   background-color: #000000;
+}
+
+#birthdayButton, #birthdayInput {
+  width: 250px;
 }

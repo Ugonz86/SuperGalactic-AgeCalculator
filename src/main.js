@@ -4,6 +4,7 @@ import './styles.css';
 import $ from 'jquery';
 import { GalacticCalculator } from './backend-code';
 import { ExpectancyCalculator } from './backend-code';
+import { BirthdayCalculator } from './backend-code';
 import "./img/mercury.jpg";
 import "./img/venus.jpg";
 import "./img/mars.jpg";
@@ -18,6 +19,10 @@ $("#seeAgeInPlanets").click(function() {
 });
 $("#seeYearsLeft").click(function() {
   $("#expectancyForm").slideDown("slow");
+  $("#intro").hide("slow");
+});
+$("#seeNextBirthday").click(function() {
+  $("#birthdayForm").slideDown("slow");
   $("#intro").hide("slow");
 });
 $(".goHome").click(function() {
@@ -79,4 +84,8 @@ $("#ageInputForm").submit(function(event) {
     }
 
     });
+    // $("#birthdayForm").submit(function(event) {
+    //   event.preventDefault();
+    //   var inputtedBirthday = $('#birthdayInput').val();
+    // });
 });
