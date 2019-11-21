@@ -31,7 +31,7 @@
 
 * _Open Command Line_
 * _cd Desktop_
-* _Git Clone https://github.com/Ugonz86/SuperGalactic-AgeCalculator4.git_
+* _Git Clone https://github.com/Ugonz86/SuperGalactic-AgeCalculator.git_
 * _cd SuperGalactic-AgeCalculator_
 * _atom . (or code .)_
 * _npm install_
@@ -43,7 +43,7 @@
 _No bugs at the moment._
 
 ## **Github Link**
-* _https://ugonz86.github.io/SuperGalactic-AgeCalculator4/_
+* _https://ugonz86.github.io/SuperGalactic-AgeCalculator/_
 
 ## Support and contact details
 
