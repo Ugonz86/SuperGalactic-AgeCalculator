@@ -27,25 +27,29 @@ describe('GalacticCalculator', () => {
 });
 
 describe('ExpectancyCalculator', () => {
-  test('should correctly calculate the user’s life expectancy on Mercury', () => {
+  test('should return number of Mercury years past expectancy if Earth user enters age that is higher than life expectancy', () => {
     var calculator = new ExpectancyCalculator(100, 33);
     console.log(calculator);
     expect(calculator.lifeExpectancyInMercury()).toEqual(279);
   });
-  test('should correctly calculate the user’s life expectancy on Venus', () => {
+  test('should return number of Venus years past expectancy if Earth user enters age that is higher than life expectancy', () => {
     var calculator = new ExpectancyCalculator(100, 33);
     console.log(calculator);
     expect(calculator.lifeExpectancyInVenus()).toEqual(108);
   });
-  test('should correctly calculate the user’s life expectancy on Mars', () => {
+  test('should return number of Mars years past expectancy if Earth user enters age that is higher than life expectancy', () => {
     var calculator = new ExpectancyCalculator(100, 33);
     console.log(calculator);
     expect(calculator.lifeExpectancyInMars()).toEqual(35);
   });
-  test('should correctly calculate the user’s life expectancy on Jupiter', () => {
+  test('should return number of Jupiter years past expectancy if Earth user enters age that is higher than life expectancy', () => {
     var calculator = new ExpectancyCalculator(100, 33);
     console.log(calculator);
     expect(calculator.lifeExpectancyInJupiter()).toEqual(5);
+  });
+  test('should return negative number of planet years if actual age is lower than the life expectancy', () => {
+    var calculator = new ExpectancyCalculator(33, 100);
+    expect(calculator.lifeExpectancyInJupiter()).toEqual(-6);
   });
 });
 
