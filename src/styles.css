@@ -12,31 +12,6 @@ body {
   background-color: transparent;
 }
 
-.container {
-  text-align: center;
-  margin-top: 200px;
-  background-color: none;
-}
-
-.row {
-  height: 250px;
-  width: inherit;
-  justify-content: center;
-}
-
-.column {
-  border-radius: 20px;
-  height: 250px;
-  width: 250px;
-  padding: 15px;
-}
-
-.jumbotron {
-  background-color: rgba(0, 0, 0, 0.50);
-  border-radius: 20px;
-
-}
-
 img {
   height: 100%;
   width: 100%;
@@ -57,33 +32,34 @@ h1 {
 }
 
 input {
-  width: 75px;
+  width: 85px;
+  border-radius: 20px;
+  border:0; outline:none;
+  color: #351fff;
+}
+
+.container {
+  text-align: center;
+  margin-top: 200px;
+  background-color: none;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.50);
   border-radius: 20px;
 }
 
-.btn-dark, button {
-  width: 75px;
-  border-radius: 25px;
-  height: 43px;
-}
-#intro {
-  color: white;
-  margin-top: 75px;
-}
-#ageInputForm, #expectancyForm, #birthdayForm {
-  display: none;
-  color: white;
-  font-size: 150%;
-  margin-top: 100px;
-  text-align: center;
+.row {
+  height: 250px;
+  width: inherit;
+  justify-content: center;
 }
 
-#resultDiv, #yearsLeft, #birthdayInPlanets {
-  display: none;
-  margin-top: 100px;
-
+.column {
   border-radius: 20px;
-  text-align: center;
+  height: 250px;
+  width: 250px;
+  padding: 15px;
 }
 
 .middle {
@@ -92,7 +68,6 @@ input {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -104,6 +79,33 @@ input {
   padding: 16px 40px;
   background-color: black;
   border-radius: 20px;
+  width: 200px;
+}
+
+.btn-dark, button {
+  width: 75px;
+  border-radius: 25px;
+  height: 43px;
+  border:0; outline:none;
+}
+#intro {
+  color: white;
+  margin-top: 75px;
+}
+#ageInputForm, #expectancyForm, #birthdayForm {
+  display: none;
+  color: white;
+  font-size: 150%;
+  margin-top: 100px;
+  text-align: center;
+
+}
+
+#resultDiv, #yearsLeft, #nextBirthdayInPlanets {
+  display: none;
+  margin-top: 100px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 #mercury:hover .middle, #venus:hover .middle, #mars:hover .middle, #jupiter:hover .middle {
@@ -132,18 +134,22 @@ input {
   border: none;
   padding: 5px;
   transition: 0.3s;
+  border:0; outline:none;
 }
 #seeAgeInPlanets:hover, #seeYearsLeft:hover, #seeNextBirthday:hover, #ageInputButton:hover, #expectancyButton:hover, .goHome:hover, #birthdayButton:hover {
   box-shadow: white 1px 1px 3px;
   border: solid 1px #8d7ea8;
   background-color: #000000;
+  border:0; outline:none;
+  color: #351fff;
+  text-shadow: #351fff 1px 2px 3px;
 }
 
-#birthdayButton, #birthdayInput {
-  width: 250px;
+#birthdayInMercury, #birthdayInVenus, #birthdayInMars, #birthdayInJupiter {
+  color: #351fff;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 780px) {
   .column {
     float: left;
   }
@@ -162,14 +168,13 @@ input {
     justify-content: center;
     margin-top: 150px;
   }
-
   .column {
+    display: block;
     border-radius: 20px;
     height: 350px;
     width: 350px;
     padding: 15px;
   }
-
   img {
     height: 100%;
     width: 100%;
