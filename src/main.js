@@ -88,12 +88,12 @@ $(document).ready(function(){
     $("#birthdayForm").hide("slow");
     $("#nextBirthdayInPlanets").slideDown("slow");
     var nextBdayInMercury = calculatorResult.nextBirthdayInMercury();
-    $("#birthdayInMercury").text("Your next birthday: " + nextBdayInMercury);
+    $("#birthdayInMercury").text(nextBdayInMercury);
     var nextBdayInVenus = calculatorResult.nextBirthdayInVenus();
-    $("#birthdayInVenus").text("Your next birthday: " + nextBdayInVenus);
+    $("#birthdayInVenus").text(nextBdayInVenus);
     var nextBdayInMars = calculatorResult.nextBirthdayInMars();
-    $("#birthdayInMars").text("Your next birthday: " + nextBdayInMars);
+    $("#birthdayInMars").text(nextBdayInMars);
     var nextBdayInJupiter = calculatorResult.nextBirthdayInJupiter();
-    $("#birthdayInJupiter").text("Your next birthday: " + nextBdayInJupiter);
+    $("#birthdayInJupiter").text(nextBdayInJupiter);
   });
 });
