@@ -6,12 +6,13 @@
 ##### By _**Uriel Gonzalez**_
 &nbsp;
 ## **Specs**
-* _Program returns the inputted age in Mercury years. (A Mercury year is .24 Earth years.)_
-* _Program returns the inputted age in Venus years. (A Venus year is .62 Earth years.)_
-* _Program returns the inputted age in Mars years. (A Mars year is 1.88 Earth years.)_
-* _Program returns the inputted age in Jupiter years. (A Jupiter year is 11.86 Earth years.)_
-* _Program determines how many years a user has left to live on each planet._
-* _If a user has already surpassed the average life expectancy, the program returns the number of years they have lived past the life expectancy._
+* _Program calculates the user's inputted age in Mercury years. (A Mercury year is .24 Earth years.)_
+* _Program calculates the user's inputted age in Venus years. (A Venus year is .62 Earth years.)_
+* _Program calculates the user's inputted age in Mars years. (A Mars year is 1.88 Earth years.)_
+* _Program calculates the user's inputted age in Jupiter years. (A Jupiter year is 11.86 Earth years.)_
+* _Program calculates how many years a user has left to live on each planet._
+* _If a user has already surpassed the average life expectancy, the program calculates the number of years they have lived past the life expectancy._
+* _Program calculates the user's next birthday on each planet.
 
 ## **Tests**
 
@@ -25,6 +26,7 @@
 | **Calculate years of life expectancy on Venus**  | Age: 33, Average Life Expectancy: 100 | 108  |
 | **Calculate years of life expectancy on Mars**  | Age: 33, Average Life Expectancy: 100 | Mercury: 35  |
 | **Calculate years of life expectancy on Mercury**  | Age: 33, Average Life Expectancy: 100 | Mercury: 5 |
+| **Calculate next birthday in other planets**  | Birthday: 22, 9, 2019 | "Sat Aug 2 2031" |
 
 
 ## **Setup/Installation Requirements**

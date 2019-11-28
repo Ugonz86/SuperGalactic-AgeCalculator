@@ -54,25 +54,33 @@ export function NextBirthdayCalculator(day, month, year) {
   this.year = year;
 }
 NextBirthdayCalculator.prototype.nextBirthdayInMercury = function() {
-  let nextBirthdayInMercury = new Date(this.year,this.month - 1,this.day);
+  let nextBirthdayInMercury = new Date();
+  nextBirthdayInMercury.setDate(this.day);
+  nextBirthdayInMercury.setMonth(this.month - 1);
   nextBirthdayInMercury.setDate(nextBirthdayInMercury.getDate() + mercuryRevolutionPeriod);
   let birthdayMercury = nextBirthdayInMercury.toLocaleString('en-US',{weekday: 'short'}) + ' ' + nextBirthdayInMercury.toLocaleString('en-US', {month: 'short'}) + ' ' + nextBirthdayInMercury.getDate() + ' ' + nextBirthdayInMercury.getFullYear();
   return birthdayMercury;
 };
 NextBirthdayCalculator.prototype.nextBirthdayInVenus = function() {
-  let nextBirthdayInVenus = new Date(this.year,this.month - 1,this.day);
+  let nextBirthdayInVenus = new Date();
+  nextBirthdayInVenus.setDate(this.day);
+  nextBirthdayInVenus.setMonth(this.month - 1);
   nextBirthdayInVenus.setDate(nextBirthdayInVenus.getDate() + venusRevolutionPeriod);
   let birthdayVenus = nextBirthdayInVenus.toLocaleString('en-US',{weekday: 'short'}) + ' ' + nextBirthdayInVenus.toLocaleString('en-US', {month: 'short'}) + ' ' + nextBirthdayInVenus.getDate() + ' ' + nextBirthdayInVenus.getFullYear();
   return birthdayVenus;
 };
 NextBirthdayCalculator.prototype.nextBirthdayInMars = function() {
-  let nextBirthdayInMars = new Date(this.year,this.month - 1,this.day);
+  let nextBirthdayInMars = new Date();
+  nextBirthdayInMars.setDate(this.day);
+  nextBirthdayInMars.setMonth(this.month - 1);
   nextBirthdayInMars.setDate(nextBirthdayInMars.getDate() + marsRevolutionPeriod);
   let birthdayMars = nextBirthdayInMars.toLocaleString('en-US',{weekday: 'short'}) + ' ' + nextBirthdayInMars.toLocaleString('en-US', {month: 'short'}) + ' ' + nextBirthdayInMars.getDate() + ' ' + nextBirthdayInMars.getFullYear();
   return birthdayMars;
 };
 NextBirthdayCalculator.prototype.nextBirthdayInJupiter = function() {
-  let nextBirthdayInJupiter = new Date(this.year,this.month - 1,this.day);
+  let nextBirthdayInJupiter = new Date();
+  nextBirthdayInJupiter.setDate(this.day);
+  nextBirthdayInJupiter.setMonth(this.month - 1);
   nextBirthdayInJupiter.setDate(nextBirthdayInJupiter.getDate() + jupiterRevolutionPeriod);
   let birthdayJupiter = nextBirthdayInJupiter.toLocaleString('en-US',{weekday: 'short'}) + ' ' + nextBirthdayInJupiter.toLocaleString('en-US', {month: 'short'}) + ' ' + nextBirthdayInJupiter.getDate() + ' ' + nextBirthdayInJupiter.getFullYear();
   return birthdayJupiter;
