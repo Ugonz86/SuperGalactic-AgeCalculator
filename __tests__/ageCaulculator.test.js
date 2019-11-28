@@ -1,5 +1,6 @@
 import { GalacticCalculator } from './../src/backend-code.js';
 import { ExpectancyCalculator } from './../src/backend-code.js';
+import { NextBirthdayCalculator } from './../src/backend-code.js';
 
 describe('GalacticCalculator', () => {
 
@@ -45,5 +46,31 @@ describe('ExpectancyCalculator', () => {
     var calculator = new ExpectancyCalculator(100, 33);
     console.log(calculator);
     expect(calculator.lifeExpectancyInJupiter()).toEqual(5);
+  });
+});
+
+describe('NextBirthdayCalculator', () => {
+  test('should correctly calculate the user next birthday on Mercury', () => {
+    var calculator = new NextBirthdayCalculator(22, 9, 2019);
+    console.log(calculator);
+    expect(calculator.nextBirthdayInMercury()).toEqual("Wed Dec 18 2019");
+  });
+
+  test('should correctly calculate the user next birthday on Venus', () => {
+    var calculator = new NextBirthdayCalculator(22, 9, 2019);
+    console.log(calculator);
+    expect(calculator.nextBirthdayInVenus()).toEqual("Sun May 3 2020");
+  });
+
+  test('should correctly calculate the user next birthday on Mars', () => {
+    var calculator = new NextBirthdayCalculator(22, 9, 2019);
+    console.log(calculator);
+    expect(calculator.nextBirthdayInMars()).toEqual("Sun Aug 8 2021");
+  });
+
+  test('should correctly calculate the user next birthday on Jupiter', () => {
+    var calculator = new NextBirthdayCalculator(22, 9, 2019);
+    console.log(calculator);
+    expect(calculator.nextBirthdayInJupiter()).toEqual("Sat Aug 2 2031");
   });
 });
