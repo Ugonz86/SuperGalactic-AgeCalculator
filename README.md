@@ -58,6 +58,7 @@ _No bugs at the moment._
 * _Bootstrap - for UI layout and styling_
 * _JavaScript - for backend functionality_
 * _jQuery - To help back end code have effects on UI_
+* _Jest - Test runner
 * _Atom - To write and edit the code_
 * _Chrome - To help debug and see progress_
 
